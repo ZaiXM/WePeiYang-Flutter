@@ -749,8 +749,8 @@ class _FloorMessagesListState extends State<FloorMessagesList>
   @override
   Widget build(BuildContext context) {
     super.build(context);
-
     Widget child;
+    onRefresh();
 
     if (_refreshController.isRefresh) {
       child = Center(

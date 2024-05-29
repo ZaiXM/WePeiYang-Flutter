@@ -90,8 +90,6 @@ class LevelUtil extends StatelessWidget {
         style: style,
       ),
     );
-
-    return w1;
   }
 }
 

@@ -183,12 +183,12 @@ class FeedbackHomePageState extends State<FeedbackHomePage>
         child: count == 0
             ? w1
             : badges.Badge(
-              child: w1,
-              //考古, 红点实现方法!!
-              badgeContent: Text(
-                count.toString(),
-                style: TextUtil.base.reverse(context).sp(8),
-              )),
+            child: w1,
+            //考古, 红点实现方法!!
+            badgeContent: Text(
+              count.toString(),
+              style: TextUtil.base.reverse(context).sp(8),
+            )),
       ),
     );
 

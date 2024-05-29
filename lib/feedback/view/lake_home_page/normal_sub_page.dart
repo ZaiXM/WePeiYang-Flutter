@@ -241,15 +241,17 @@ class NSubPageState extends State<NSubPage> with AutomaticKeepAliveClientMixin {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 WButton(
+                                  //考古
                                   onPressed: () {
                                     setState(() {
                                       context.read<LakeModel>().sortSeq = 1;
-                                      listToTop();
+                                      onRefresh();
                                     });
                                   },
                                   child: Padding(
                                     padding: EdgeInsets.fromLTRB(
                                         20.w, 14.h, 5.w, 6.h),
+                                    //默认排序
                                     child: Text('默认排序',
                                         style:
                                             context.read<LakeModel>().sortSeq !=
@@ -264,11 +266,13 @@ class NSubPageState extends State<NSubPage> with AutomaticKeepAliveClientMixin {
                                                     .sp(14)),
                                   ),
                                 ),
+                                //最新发帖
                                 WButton(
                                   onPressed: () {
+                                    //考古 难绷
                                     setState(() {
                                       context.read<LakeModel>().sortSeq = 0;
-                                      listToTop();
+                                      onRefresh();
                                     });
                                   },
                                   child: Padding(
